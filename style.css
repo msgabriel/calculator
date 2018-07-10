@@ -23,7 +23,6 @@ input[type] {
 
 input[type]:hover {
   background: #f3f6fa;
-  border-radius: 5px;
 }
 
 .container {
@@ -47,11 +46,6 @@ input[type]:hover {
 
 .wide {
   grid-column: span 4;
-}
-
-input:disabled {
-  background: transparent;
-  border: 0;
 }
 
 input[type].blue {

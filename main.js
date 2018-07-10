@@ -61,9 +61,10 @@ function keyCheck() {
   //backspace
   if(event.which == 8) {
     storedVal = storedVal.slice(0, -1);
-    screen.textContent = storedVal;
     if(storedVal == ''){
       screen.textContent = 0;
+    } else {
+      screen.textContent = storedVal;
     }
   }
   //del
@@ -75,7 +76,7 @@ function keyCheck() {
     }
   }
   //equal
-  if(event.which == 48) {
+  if(event.which == 48 || event.which == 13) {
     getTotal();
   }
 }
