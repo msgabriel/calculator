@@ -1,0 +1,85 @@
+body, p {margin: 0}
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #e6ebf1;
+  color: #555558;
+  font: 16px 'Varela Round', sans-serif;
+}
+
+input[type] {
+  font-size: 25px;
+  font-family: inherit;
+  background: #ffffff00;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  outline: 0;
+}
+
+input[type]:hover {
+  background: #f3f6fa;
+  border-radius: 5px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 55px);
+  grid-template-rows: repeat(6, 60px);
+  grid-gap: 5px;
+  align-items: center;
+  background: #fff;
+  box-shadow: 1px 5px 20px #547dd423;
+  padding: 15px;
+}
+
+.wide {
+  grid-column: span 4;
+}
+
+input:disabled {
+  background: transparent;
+  border: 0;
+}
+
+input[type].blue {
+  font-size: 1.3em;
+  background: #3774f6;
+  color: #fff;
+  box-shadow: 1px 2px 15px #3774f640;
+  transition-duration: 200ms;
+}
+input[type].blue:hover {
+  box-shadow: 1px 1px 25px #246aff90;
+}
+
+.display {
+  overflow:auto;
+  font-size: 30px;
+  line-height: 2;
+  color: #7482a1;
+  background: #f3f6fa;
+  text-align: right;
+  padding:0 18px;
+}
+
+input[type].op {
+  color: #3774f6;
+  font-weight: 600;
+}
+
+#directions {
+  margin-top: 1.5em;
+}
