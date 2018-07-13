@@ -46,7 +46,7 @@ function display() {
 result.addEventListener('click', getTotal)
 
 function getTotal() {
-  storedVal = eval(storedVal);
+  storedVal = Math.round(eval(storedVal) * 1000000) / 1000000;
   screen.textContent = storedVal;
 }
 
@@ -73,6 +73,13 @@ function keyCheck() {
     screen.textContent = storedVal;
     if(storedVal == ''){
       screen.textContent = 0;
+    }
+  }
+  //decimal
+  if(event.key == '.') {
+    if(storedVal.slice(-1) != '.') {
+      storedVal += event.key;
+      screen.textContent = storedVal;
     }
   }
   //equal

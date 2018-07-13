@@ -60,7 +60,7 @@ input[type].blue:hover {
 }
 
 .display {
-  overflow:auto;
+  overflow: auto;
   font-size: 30px;
   line-height: 2;
   color: #7482a1;
